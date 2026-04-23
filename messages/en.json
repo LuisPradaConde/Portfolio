@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Professional portfolio",
+    "description": "Premium bilingual digital resume built with Next.js."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "switcher": {
+    "label": "Language"
+  },
+  "about": {
+    "focusTitle": "Professional focus",
+    "focusBody": "I combine visual judgment, product thinking and technical rigor to build interfaces that are clear, dependable and sustainable. My work usually sits between system definition, frontend execution and continuous experience improvement.",
+    "specialties": "Specialties"
+  },
+  "experience": {
+    "eyebrow": "Career path",
+    "title": "Experience centered on product, impact and technical consistency."
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Strong technical foundation and continuous learning shaped by product thinking."
+  },
+  "skills": {
+    "eyebrow": "Capabilities",
+    "title": "Skills aligned with demanding teams and high-end digital products."
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "title": "Fictional projects crafted to present a credible and consistent technical profile."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Available for conversations about product, frontend and technical leadership.",
+    "description": "Fictional section that we will later replace with your real details and professional channels.",
+    "emailLabel": "Email",
+    "linksLabel": "Links",
+    "body": "Primary channel for new opportunities, selective collaborations and initial conversations.",
+    "copy": "Copy email",
+    "copied": "Copied"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "portraitAlt": "Fictional professional portrait"
+  }
+}

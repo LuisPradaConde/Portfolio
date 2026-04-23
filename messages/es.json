@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Portfolio profesional",
+    "description": "Curriculum digital premium bilingue en Next.js."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "experience": "Experiencia",
+    "education": "Educacion",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "openMenu": "Abrir menu de navegacion",
+    "closeMenu": "Cerrar menu de navegacion"
+  },
+  "switcher": {
+    "label": "Idioma"
+  },
+  "about": {
+    "focusTitle": "Enfoque profesional",
+    "focusBody": "Combino criterio visual, pensamiento de producto y rigor tecnico para construir interfaces claras, fiables y sostenibles. Mi trabajo suele situarse entre la definicion del sistema, la ejecucion frontend y la mejora continua de la experiencia.",
+    "specialties": "Especialidades"
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia centrada en producto, impacto y consistencia tecnica."
+  },
+  "education": {
+    "eyebrow": "Formacion",
+    "title": "Base tecnica solida y aprendizaje continuo orientado a producto."
+  },
+  "skills": {
+    "eyebrow": "Capacidades",
+    "title": "Habilidades alineadas con equipos exigentes y productos de alto nivel."
+  },
+  "projects": {
+    "eyebrow": "Seleccion",
+    "title": "Proyectos ficticios planteados para un perfil tecnico creible y consistente."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Disponible para conversaciones sobre producto, frontend y liderazgo tecnico.",
+    "description": "Seccion ficticia que mas adelante sustituiremos por tus datos reales y canales profesionales.",
+    "emailLabel": "Email",
+    "linksLabel": "Enlaces",
+    "body": "Canal principal para nuevas oportunidades, colaboraciones selectivas y conversaciones iniciales.",
+    "copy": "Copiar email",
+    "copied": "Copiado"
+  },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido principal",
+    "portraitAlt": "Retrato profesional ficticio"
+  }
+}
