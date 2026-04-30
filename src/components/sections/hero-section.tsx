@@ -4,6 +4,7 @@ import {ArrowUpRight, Sparkles} from 'lucide-react';
 import {profile, type Locale} from '@/data/profile';
 import {Reveal} from '@/components/ui/reveal';
 import {withBasePath} from '@/lib/site-path';
+import { withBasePath } from '@/lib/utils';
 
 type HeroSectionProps = {
   locale: Locale;
@@ -55,7 +56,7 @@ export async function HeroSection({locale}: HeroSectionProps) {
             <div className="relative mx-auto mb-6 aspect-square w-full max-w-[260px] overflow-hidden rounded-[1.6rem] border border-white/8 bg-[linear-gradient(180deg,rgba(18,24,48,0.96),rgba(8,12,24,0.96))]">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(56,189,248,0.16),transparent_20%),radial-gradient(circle_at_80%_0%,rgba(109,124,255,0.18),transparent_24%)]" />
               <Image
-                src="/images/foto-perfil.jpeg"
+                src={withBasePath('/images/foto-perfil.jpeg')}
                 alt={t('portraitAlt')}
                 fill
                 sizes="260px"
