@@ -4,7 +4,7 @@ import {ArrowUpRight, Sparkles} from 'lucide-react';
 import {profile, type Locale} from '@/data/profile';
 import {Reveal} from '@/components/ui/reveal';
 import {withBasePath} from '@/lib/site-path';
-import { withBasePath } from '@/lib/utils';
+
 
 type HeroSectionProps = {
   locale: Locale;
