@@ -1,4 +1,4 @@
-import {getTranslations} from 'next-intl/server';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Footer} from '@/components/layout/footer';
 import {Navbar} from '@/components/layout/navbar';
 import {AboutSection} from '@/components/sections/about-section';
@@ -16,6 +16,7 @@ type HomePageProps = {
 
 export default async function HomePage({params}: HomePageProps) {
   const {locale} = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({locale, namespace: 'accessibility'});
 
   return (
@@ -32,8 +33,8 @@ export default async function HomePage({params}: HomePageProps) {
         <AboutSection locale={locale} />
         <ExperienceSection locale={locale} />
         <EducationSection locale={locale} />
-        <SkillsSection locale={locale} />
         <ProjectsSection locale={locale} />
+        <SkillsSection locale={locale} />
         <ContactSection locale={locale} />
       </main>
       <Footer locale={locale} />

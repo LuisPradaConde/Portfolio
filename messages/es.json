@@ -1,55 +1,55 @@
 {
   "meta": {
-    "title": "Portfolio profesional",
-    "description": "Curriculum digital premium bilingue en Next.js."
+    "title": "Luis Prada Conde | Portfolio profesional",
+    "description": "Portfolio profesional de ciberseguridad, ciberinteligencia y DevSecOps."
   },
   "nav": {
     "home": "Inicio",
-    "about": "Sobre mi",
+    "about": "Sobre mí",
     "experience": "Experiencia",
-    "education": "Educacion",
+    "education": "Educación",
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "openMenu": "Abrir menu de navegacion",
-    "closeMenu": "Cerrar menu de navegacion"
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación"
   },
   "switcher": {
     "label": "Idioma"
   },
   "about": {
     "focusTitle": "Enfoque profesional",
-    "focusBody": "Combino criterio visual, pensamiento de producto y rigor tecnico para construir interfaces claras, fiables y sostenibles. Mi trabajo suele situarse entre la definicion del sistema, la ejecucion frontend y la mejora continua de la experiencia.",
+    "focusBody": "Oriento mi trabajo a la construcción de soluciones seguras, reproducibles y bien documentadas, priorizando la robustez, la trazabilidad y la eficiencia operativa. Combino una mentalidad defensiva con capacidades de automatización y análisis, lo que me permite abordar problemas complejos desde una perspectiva estructurada y orientada a resultados.\n\nTrabajo desde Madrid en modalidad híbrida, con disponibilidad para colaborar en entornos distribuidos y proyectos remotos.",
     "specialties": "Especialidades"
   },
   "experience": {
     "eyebrow": "Trayectoria",
-    "title": "Experiencia centrada en producto, impacto y consistencia tecnica."
+    "title": "Experiencia en ciberseguridad aplicada al sector defensa."
   },
   "education": {
-    "eyebrow": "Formacion",
-    "title": "Base tecnica solida y aprendizaje continuo orientado a producto."
+    "eyebrow": "Formación",
+    "title": "Formación académica en ingeniería informática y especialización en ciberseguridad."
   },
   "skills": {
     "eyebrow": "Capacidades",
-    "title": "Habilidades alineadas con equipos exigentes y productos de alto nivel."
+    "title": "Fortalezas técnicas orientadas a la protección, análisis y automatización de entornos tecnológicos."
   },
   "projects": {
-    "eyebrow": "Seleccion",
-    "title": "Proyectos ficticios planteados para un perfil tecnico creible y consistente."
+    "eyebrow": "Proyectos",
+    "title": "Proyectos y ejercicios prácticos orientados a ciberseguridad, análisis de redes y operación en entornos técnicos."
   },
   "contact": {
     "eyebrow": "Contacto",
-    "title": "Disponible para conversaciones sobre producto, frontend y liderazgo tecnico.",
-    "description": "Seccion ficticia que mas adelante sustituiremos por tus datos reales y canales profesionales.",
+    "title": "Conecta conmigo",
+    "description": "Disponible para oportunidades profesionales y colaboraciones en ciberseguridad.",
     "emailLabel": "Email",
     "linksLabel": "Enlaces",
-    "body": "Canal principal para nuevas oportunidades, colaboraciones selectivas y conversaciones iniciales.",
+    "body": "Canal principal para contacto profesional, propuestas y primeras conversaciones.",
     "copy": "Copiar email",
     "copied": "Copiado"
   },
   "accessibility": {
     "skipToContent": "Saltar al contenido principal",
-    "portraitAlt": "Retrato profesional ficticio"
+    "portraitAlt": "Retrato profesional de Luis Prada Conde"
   }
 }

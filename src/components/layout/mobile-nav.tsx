@@ -2,6 +2,7 @@
 
 import {useState} from 'react';
 import {Menu, X} from 'lucide-react';
+import {withBasePath} from '@/lib/site-path';
 
 type MobileNavProps = {
   locale: 'es' | 'en';
@@ -45,7 +46,7 @@ export function MobileNav({
             {items.map((item) => (
               <a
                 key={item.id}
-                href={`/${locale}#${item.id}`}
+                href={withBasePath(`/${locale}/#${item.id}`)}
                 onClick={closeMenu}
                 className="rounded-2xl px-4 py-3 text-sm text-[var(--muted)] transition hover:bg-white/[0.05] hover:text-white"
               >

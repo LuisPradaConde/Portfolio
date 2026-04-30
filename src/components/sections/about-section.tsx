@@ -27,7 +27,7 @@ export async function AboutSection({locale}: AboutSectionProps) {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
                 {t('focusTitle')}
               </p>
-              <p className="mt-5 text-base leading-8 text-[var(--muted-strong)]">
+              <p className="mt-5 whitespace-pre-line text-base leading-8 text-[var(--muted-strong)]">
                 {t('focusBody')}
               </p>
             </div>
@@ -39,7 +39,7 @@ export async function AboutSection({locale}: AboutSectionProps) {
                 {t('specialties')}
               </p>
               <div className="mt-5 flex flex-wrap gap-2.5">
-                {['Next.js', 'React', 'TypeScript', 'UX Systems', 'Accessibility', 'Performance'].map(
+                {['Ciberseguridad defensiva', 'Ciberinteligencia aplicada', 'DevSecOps', 'Infraestructura virtual', 'Hardening de sistemas', 'Diseño y securización de redes'].map(
                   (item) => (
                     <span
                       key={item}

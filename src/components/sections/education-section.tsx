@@ -30,6 +30,14 @@ export async function EducationSection({locale}: EducationSectionProps) {
                 <p className="mt-3 text-base text-[var(--muted)]">
                   {item.institution}
                 </p>
+                <ul className="mt-5 space-y-2 text-sm leading-6 text-[var(--muted)]">
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight.en} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
+                      <span>{highlight[locale]}</span>
+                    </li>
+                  ))}
+                </ul>
               </article>
             </Reveal>
           ))}

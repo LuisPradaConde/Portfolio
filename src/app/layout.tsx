@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Premium CV Portfolio',
-  description: 'Portfolio profesional bilingue construido con Next.js y React.'
+  title: 'Luis Prada Conde | Portfolio profesional',
+  description: 'Portfolio profesional bilingüe de ciberseguridad, ciberinteligencia y DevSecOps.'
 };
 
 type RootLayoutProps = {

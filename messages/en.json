@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Professional portfolio",
-    "description": "Premium bilingual digital resume built with Next.js."
+    "title": "Luis Prada Conde | Professional portfolio",
+    "description": "Professional portfolio focused on cybersecurity, cyber intelligence and DevSecOps."
   },
   "nav": {
     "home": "Home",
@@ -19,37 +19,37 @@
   },
   "about": {
     "focusTitle": "Professional focus",
-    "focusBody": "I combine visual judgment, product thinking and technical rigor to build interfaces that are clear, dependable and sustainable. My work usually sits between system definition, frontend execution and continuous experience improvement.",
+    "focusBody": "I focus my work on building secure, reproducible and well-documented solutions, prioritizing robustness, traceability and operational efficiency. I combine a defensive mindset with automation and analysis capabilities, which allows me to address complex problems from a structured, results-oriented perspective.\n\nI work from Madrid in a hybrid model, with availability to collaborate in distributed environments and remote projects.",
     "specialties": "Specialties"
   },
   "experience": {
     "eyebrow": "Career path",
-    "title": "Experience centered on product, impact and technical consistency."
+    "title": "Cybersecurity experience applied to the defense sector."
   },
   "education": {
     "eyebrow": "Education",
-    "title": "Strong technical foundation and continuous learning shaped by product thinking."
+    "title": "Academic background in computer engineering and specialization in cybersecurity."
   },
   "skills": {
     "eyebrow": "Capabilities",
-    "title": "Skills aligned with demanding teams and high-end digital products."
+    "title": "Technical strengths for building, defending and automating secure environments."
   },
   "projects": {
-    "eyebrow": "Selected work",
-    "title": "Fictional projects crafted to present a credible and consistent technical profile."
+    "eyebrow": "Projects",
+    "title": "Projects and exercises applied to security, automation and operations."
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Available for conversations about product, frontend and technical leadership.",
-    "description": "Fictional section that we will later replace with your real details and professional channels.",
+    "title": "Professional contact for cybersecurity opportunities and collaborations.",
+    "description": "Professional contact channels for Luis Prada Conde.",
     "emailLabel": "Email",
     "linksLabel": "Links",
-    "body": "Primary channel for new opportunities, selective collaborations and initial conversations.",
+    "body": "Primary channel for professional opportunities, collaborations and initial conversations.",
     "copy": "Copy email",
     "copied": "Copied"
   },
   "accessibility": {
     "skipToContent": "Skip to main content",
-    "portraitAlt": "Fictional professional portrait"
+    "portraitAlt": "Professional portrait of Luis Prada Conde"
   }
 }

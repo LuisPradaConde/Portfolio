@@ -1,5 +1,5 @@
 import {getTranslations} from 'next-intl/server';
-import {Github, Linkedin, Mail, Palette} from 'lucide-react';
+import {Github, Linkedin, Mail, Palette, Phone} from 'lucide-react';
 import {profile, type Locale} from '@/data/profile';
 import {CopyEmailButton} from '@/components/ui/copy-email-button';
 import {Reveal} from '@/components/ui/reveal';
@@ -12,7 +12,8 @@ type ContactSectionProps = {
 const iconMap = {
   LinkedIn: Linkedin,
   GitHub: Github,
-  Behance: Palette
+  Behance: Palette,
+  Phone
 } as const;
 
 export async function ContactSection({locale}: ContactSectionProps) {
@@ -67,6 +68,19 @@ export async function ContactSection({locale}: ContactSectionProps) {
               <div className="mt-4 grid gap-3">
                 {profile.contact.links.map((link) => {
                   const Icon = iconMap[link.label as keyof typeof iconMap];
+                  const isLinkedIn = link.label === 'LinkedIn';
+                  const className = `flex items-center gap-3 rounded-2xl border border-white/8 bg-white/[0.02] text-white/80 transition hover:border-[var(--line-strong)] hover:bg-white/[0.05] hover:text-white ${
+                    isLinkedIn ? 'px-5 py-4 text-base font-semibold' : 'px-4 py-3 text-sm'
+                  }`;
+
+                  if (!link.href) {
+                    return (
+                      <div key={link.label} className={className}>
+                        <Phone size={16} />
+                        <span>{link.label}</span>
+                      </div>
+                    );
+                  }
 
                   return (
                     <a
@@ -74,9 +88,9 @@ export async function ContactSection({locale}: ContactSectionProps) {
                       href={link.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-3 rounded-2xl border border-white/8 bg-white/[0.02] px-4 py-3 text-sm text-white/80 transition hover:border-[var(--line-strong)] hover:bg-white/[0.05] hover:text-white"
+                      className={className}
                     >
-                      {Icon ? <Icon size={16} /> : null}
+                      {Icon ? <Icon size={isLinkedIn ? 20 : 16} /> : null}
                       <span>{link.label}</span>
                     </a>
                   );

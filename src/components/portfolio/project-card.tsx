@@ -22,19 +22,30 @@ export function ProjectCard({project, locale}: ProjectCardProps) {
         <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white transition group-hover:text-white">
           {project.name}
         </h3>
-        <p className="mt-4 text-base leading-7 text-[var(--muted)]">
-          {project.summary[locale]}
-        </p>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {project.stack.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-white/8 bg-white/[0.04] px-3 py-1.5 text-xs text-[var(--muted-strong)]"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
+        {project.summary[locale] ? (
+          <p className="mt-4 text-base leading-7 text-[var(--muted)]">
+            {project.summary[locale]}
+          </p>
+        ) : null}
+        {project.details.length > 0 ? (
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-7 text-[var(--muted)]">
+            {project.details.map((item) => (
+              <li key={item[locale]}>{item[locale]}</li>
+            ))}
+          </ul>
+        ) : null}
+        {project.stack.length > 0 ? (
+          <div className="mt-6 flex flex-wrap gap-2">
+            {project.stack.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/8 bg-white/[0.04] px-3 py-1.5 text-xs text-[var(--muted-strong)]"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        ) : null}
       </div>
     </article>
   );

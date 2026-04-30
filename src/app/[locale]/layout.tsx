@@ -1,8 +1,9 @@
 import type {Metadata} from 'next';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import {getMessages, getTranslations} from 'next-intl/server';
+import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
+import {withBasePath} from '@/lib/site-path';
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -18,8 +19,10 @@ export async function generateMetadata({
     return {};
   }
 
+  setRequestLocale(locale);
+
   const t = await getTranslations({locale, namespace: 'meta'});
-  const baseUrl = 'https://portfolio-example.dev';
+  const baseUrl = 'https://luispradaconde.github.io';
   const canonical = `${baseUrl}/${locale}`;
 
   return {
@@ -28,14 +31,14 @@ export async function generateMetadata({
     description: t('description'),
     applicationName: 'Premium CV Portfolio',
     keywords: [
-      'Next.js portfolio',
-      'React CV',
-      'TypeScript portfolio',
-      'Frontend engineer',
-      'Premium resume website'
+      'Luis Prada Conde',
+      'Cybersecurity engineer',
+      'Cyber intelligence',
+      'DevSecOps',
+      'Infrastructure security'
     ],
-    authors: [{name: 'Adrian Navarro'}],
-    creator: 'Adrian Navarro',
+    authors: [{name: 'Luis Prada Conde'}],
+    creator: 'Luis Prada Conde',
     alternates: {
       canonical,
       languages: {
@@ -52,7 +55,7 @@ export async function generateMetadata({
       type: 'website',
       images: [
         {
-          url: '/images/profile-placeholder.svg',
+          url: withBasePath('/images/foto-perfil.jpeg'),
           width: 800,
           height: 960,
           alt: 'Professional portfolio preview'
@@ -63,13 +66,17 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
-      images: ['/images/profile-placeholder.svg']
+      images: [withBasePath('/images/foto-perfil.jpeg')]
     },
     robots: {
       index: true,
       follow: true
     }
   };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export default async function LocaleLayout({
@@ -81,6 +88,8 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
