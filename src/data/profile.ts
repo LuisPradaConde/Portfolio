@@ -272,16 +272,16 @@ export const profile = {
         en: 'Vulnerability analysis of an OpenEMR environment'
       },
       summary: {
-        es: 'Pentesting sobre OpenEMR 5.0.1, sistema de registros médicos electrónicos, en un entorno de prueba controlado, con el fin de identificar y explotar vulnerabilidades y proponer medidas de remediación.',
-        en: 'Penetration testing on OpenEMR 5.0.1, an electronic medical records system, in a controlled test environment, to identify and exploit vulnerabilities and propose remediation measures.'
+        es: 'Pentesting sobre un sistema de registros médicos electrónicos en un entorno de prueba controlado, con el fin de identificar Y explotar vulnerabilidades y proponer medidas de remediación.',
+        en: 'Penetration testing on an electronic medical records system in a controlled test environment, to identify and exploit vulnerabilities and propose remediation measures.'
       },
       details: [{
           es: 'Metodología estructurada: reconocimiento pasivo y activo, escaneo, explotación y análisis de resultados',
           en: 'Structured methodology: passive and active reconnaissance, scanning, exploitation and results analysis'
         },
         {
-          es: 'Identificación y explotación de vulnerabilidades en la aplicación web y su configuración',
-          en: 'Identification and exploitation of vulnerabilities in the web application and its configuration'
+          es: 'Identificación y explotación de vulnerabilidades sobre la aplicación y su configuración web',
+          en: 'Identification and exploitation of vulnerabilities over the web application and its configuration'
         },
         {
           es: 'Elaboración de informe ejecutivo con hallazgos y medidas de remediación',
