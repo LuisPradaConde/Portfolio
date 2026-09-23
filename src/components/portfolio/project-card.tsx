@@ -15,9 +15,21 @@ export function ProjectCard({project, locale}: ProjectCardProps) {
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
             {project.type[locale]}
           </p>
-          <span className="rounded-full border border-white/10 p-2 text-[var(--muted)] transition group-hover:border-[var(--line-strong)] group-hover:text-white">
-            <ArrowUpRight size={16} />
-          </span>
+          {project.href ? (
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${project.name} on GitHub`}
+              className="rounded-full border border-white/10 p-2 text-[var(--muted)] transition group-hover:border-[var(--line-strong)] group-hover:text-white"
+            >
+              <ArrowUpRight size={16} />
+            </a>
+          ) : (
+            <span className="rounded-full border border-white/10 p-2 text-[var(--muted)] transition group-hover:border-[var(--line-strong)] group-hover:text-white">
+              <ArrowUpRight size={16} />
+            </span>
+          )}
         </div>
         <h3 className="mt-5 text-2xl font-semibold tracking-tight text-white transition group-hover:text-white">
           {project.name}

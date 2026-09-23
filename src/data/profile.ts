@@ -29,6 +29,7 @@ type SkillGroup = {
 
 type ProjectItem = {
   name: string;
+  href?: string;
   type: LocalizedText;
   summary: LocalizedText;
   details: LocalizedText[];
@@ -231,6 +232,37 @@ export const profile = {
     }
   ] satisfies SkillGroup[],
   projects: [
+    {
+      name: 'Bodegol',
+      href: 'https://github.com/LuisPradaConde/Bodegol',
+      type: {
+        es: 'PWA de porras privadas · Mundial 2026',
+        en: 'Private prediction pool PWA · 2026 World Cup'
+      },
+      summary: {
+        es: 'Aplicación web progresiva creada para el Mundial 2026, que permitió organizar porras privadas, pronosticar partidos y resultados globales del torneo, y seguir la clasificación de cada grupo.',
+        en: 'A progressive web app built for the 2026 World Cup, enabling private prediction pools, match and tournament predictions, and group leaderboards.'
+      },
+      details: [
+        {
+          es: 'Más de 1.000 usuarios registrados y más de 200 usuarios activos al día durante el torneo',
+          en: 'Over 1,000 registered users and more than 200 daily active users during the tournament'
+        },
+        {
+          es: 'Pronósticos de marcador por partido y predicciones globales del torneo',
+          en: 'Match score predictions and tournament-wide predictions'
+        },
+        {
+          es: 'Ligas privadas para competir con amigos y consultar clasificaciones',
+          en: 'Private leagues for competing with friends and viewing standings'
+        },
+        {
+          es: 'Mercados sorpresa rotatorios para añadir variedad a cada jornada',
+          en: 'Rotating surprise markets that add variety to each matchday'
+        }
+      ],
+      stack: ['Next.js', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'PWA']
+    },
     {
       name: 'Locked Shields 2025',
       type: {
