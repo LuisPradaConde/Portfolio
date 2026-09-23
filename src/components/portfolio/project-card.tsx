@@ -8,9 +8,9 @@ type ProjectCardProps = {
 
 export function ProjectCard({project, locale}: ProjectCardProps) {
   return (
-    <article className="group relative overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(15,21,42,0.92),rgba(8,12,24,0.92))] p-7 shadow-[var(--shadow-md)] transition duration-300 hover:-translate-y-1.5 hover:border-[var(--line-strong)] hover:shadow-[var(--shadow-lg)]">
+    <article className="group relative h-full overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(15,21,42,0.92),rgba(8,12,24,0.92))] p-7 shadow-[var(--shadow-md)] transition duration-300 hover:-translate-y-1.5 hover:border-[var(--line-strong)] hover:shadow-[var(--shadow-lg)]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(109,124,255,0.16),transparent_30%)] opacity-0 transition duration-300 group-hover:opacity-100" />
-      <div className="relative">
+      <div className="relative flex h-full flex-col">
         <div className="flex items-center justify-between gap-4">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
             {project.type[locale]}
@@ -47,7 +47,7 @@ export function ProjectCard({project, locale}: ProjectCardProps) {
           </ul>
         ) : null}
         {project.stack.length > 0 ? (
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-auto flex flex-wrap gap-2 pt-6">
             {project.stack.map((item) => (
               <span
                 key={item}

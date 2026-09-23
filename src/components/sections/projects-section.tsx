@@ -18,7 +18,7 @@ export async function ProjectsSection({locale}: ProjectsSectionProps) {
           <SectionHeading eyebrow={t('eyebrow')} title={t('title')} />
         </Reveal>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid auto-rows-fr gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {profile.projects.map((project, index) => (
             <Reveal key={project.name} delay={0.08 * (index + 1)}>
               <ProjectCard project={project} locale={locale} />
