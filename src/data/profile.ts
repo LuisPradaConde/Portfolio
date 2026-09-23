@@ -268,15 +268,30 @@ export const profile = {
     {
       name: 'Trabajo de Fin de Máster',
       type: {
-        es: '(Título pendiente)',
-        en: 'Master thesis'
+        es: 'Análisis de vulnerabilidades de un entorno OpenEMR',
+        en: 'Vulnerability analysis of an OpenEMR environment'
       },
       summary: {
-        es: '(Contenido pendiente de completar)',
-        en: ''
+        es: 'Pentesting sobre OpenEMR 5.0.1, sistema de registros médicos electrónicos, en un entorno de prueba controlado, con el fin de identificar y explotar vulnerabilidades y proponer medidas de remediación.',
+        en: 'Penetration testing on OpenEMR 5.0.1, an electronic medical records system, in a controlled test environment, to identify and exploit vulnerabilities and propose remediation measures.'
       },
-      details: [],
-      stack: []
+      details: [{
+          es: 'Metodología estructurada: reconocimiento pasivo y activo, escaneo, explotación y análisis de resultados',
+          en: 'Structured methodology: passive and active reconnaissance, scanning, exploitation and results analysis'
+        },
+        {
+          es: 'Identificación y explotación de vulnerabilidades en la aplicación web y su configuración',
+          en: 'Identification and exploitation of vulnerabilities in the web application and its configuration'
+        },
+        {
+          es: 'Elaboración de informe ejecutivo con hallazgos y medidas de remediación',
+          en: 'Drafting of an executive report with findings and remediation measures'
+        },
+        {
+          es: 'Conclusiones sobre la necesidad de auditorías de seguridad continuas y buenas prácticas',
+          en: 'Conclusions on the need for continuous security audits and best practices'
+        }],
+      stack: ['Kali Linux', 'Nmap', 'Nikto', 'Gobuster', 'OWASP ZAP', 'Skipfish', 'Pentesting']
     },
     {
       name: 'Trabajo de Fin de Grado',
