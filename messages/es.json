@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Luis Prada Conde | Portfolio profesional",
-    "description": "Portfolio profesional de ciberseguridad, ciberinteligencia y DevSecOps."
+    "description": "Portfolio profesional de ciberseguridad, DevSecOps y gestión de vulnerabilidades."
   },
   "nav": {
     "home": "Inicio",
@@ -28,7 +28,7 @@
   },
   "education": {
     "eyebrow": "Formación",
-    "title": "Formación académica en ingeniería informática y especialización en ciberseguridad."
+    "title": "Formación académica y certificaciones en ingeniería informática y ciberseguridad."
   },
   "skills": {
     "eyebrow": "Capacidades",

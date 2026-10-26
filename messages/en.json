@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Luis Prada Conde | Professional portfolio",
-    "description": "Professional portfolio focused on cybersecurity, cyber intelligence and DevSecOps."
+    "description": "Professional portfolio focused on cybersecurity, DevSecOps and vulnerability management."
   },
   "nav": {
     "home": "Home",
@@ -28,7 +28,7 @@
   },
   "education": {
     "eyebrow": "Education",
-    "title": "Academic background in computer engineering and specialization in cybersecurity."
+    "title": "Academic background and certifications in computer engineering and cybersecurity."
   },
   "skills": {
     "eyebrow": "Capabilities",

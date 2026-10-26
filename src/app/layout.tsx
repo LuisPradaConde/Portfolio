@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Luis Prada Conde | Portfolio profesional',
-  description: 'Portfolio profesional bilingüe de ciberseguridad, ciberinteligencia y DevSecOps.'
+  description: 'Portfolio profesional bilingüe de ciberseguridad, DevSecOps y gestión de vulnerabilidades.'
 };
 
 type RootLayoutProps = {

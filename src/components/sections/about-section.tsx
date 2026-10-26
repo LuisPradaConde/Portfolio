@@ -39,7 +39,7 @@ export async function AboutSection({locale}: AboutSectionProps) {
                 {t('specialties')}
               </p>
               <div className="mt-5 flex flex-wrap gap-2.5">
-                {['Ciberseguridad defensiva', 'Ciberinteligencia aplicada', 'DevSecOps', 'Infraestructura virtual', 'Hardening de sistemas', 'Diseño y securización de redes'].map(
+                {['DevSecOps', 'Gestión de vulnerabilidades', 'Ciberseguridad defensiva', 'Infraestructura virtual', 'Hardening de sistemas', 'Diseño y securización de redes'].map(
                   (item) => (
                     <span
                       key={item}

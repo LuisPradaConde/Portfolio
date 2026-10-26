@@ -49,8 +49,8 @@ export const profile = {
   },
   location: 'Madrid, Spain',
   availability: {
-    es: 'Ciberseguridad · Ciberinteligencia · DevSecOps · Infraestructura segura',
-    en: 'Cybersecurity · Cyber intelligence · DevSecOps · Secure infrastructure'
+    es: 'Ciberseguridad · DevSecOps · Gestión de vulnerabilidades · Infraestructura segura',
+    en: 'Cybersecurity · DevSecOps · Vulnerability management · Secure infrastructure'
   },
   hero: {
     eyebrow: {
@@ -62,8 +62,8 @@ export const profile = {
       en: 'Cybersecurity engineering for critical and highly demanding environments'
     },
     description: {
-      es: 'Ingeniero informático especializado en ciberseguridad y ciberinteligencia, con experiencia en protección de infraestructuras, hardening de sistemas y automatización de entornos técnicos complejos. He trabajado en el diseño y despliegue de redes seguras, implementación de servicios críticos y análisis orientado a la defensa, aportando soluciones robustas en contextos donde la seguridad es un factor estratégico.',
-      en: 'Computer engineer specialized in cybersecurity and cyber intelligence, with experience in infrastructure protection, system hardening and automation of complex technical environments. I have worked on the design and deployment of secure networks, implementation of critical services and defense-oriented analysis, delivering robust solutions in contexts where security is a strategic factor.'
+      es: 'Ingeniero de ciberseguridad especializado en DevSecOps, redes seguras e infraestructura crítica en el sector defensa, orientado a la gestión de vulnerabilidades. Diseño, despliego y automatizo infraestructura segura, e identifico y corrijo las vulnerabilidades que la afectan mediante hardening, segmentación y configuración segura. Certificado en Qualys VMDR.',
+      en: 'Cybersecurity engineer specialized in DevSecOps, secure networks and critical infrastructure in the defense sector, focused on vulnerability management. I design, deploy and automate secure infrastructure, and identify and remediate the vulnerabilities that affect it through hardening, segmentation and secure configuration. Qualys VMDR certified.'
     },
     primaryCta: {
       es: 'Contactar',
@@ -80,12 +80,12 @@ export const profile = {
       en: 'About me'
     },
     title: {
-      es: 'Ciberseguridad, ciberinteligencia y automatización aplicadas a la protección de entornos críticos.',
-      en: 'Cybersecurity, cyber intelligence and automation applied to the protection of critical environments.'
+      es: 'DevSecOps, infraestructura segura y gestión de vulnerabilidades aplicadas a la protección de entornos críticos.',
+      en: 'DevSecOps, secure infrastructure and vulnerability management applied to the protection of critical environments.'
     },
     description: {
-      es: 'Actualmente trabajo en ISDEFE como ingeniero informático, con foco en ciberseguridad, ciberinteligencia e infraestructura virtual en contextos vinculados al sector defensa. Mi trabajo combina hardening de sistemas, automatización de entornos técnicos, despliegue de servicios, diseño de redes seguras y análisis de información para reforzar la postura defensiva y apoyar la toma de decisiones.',
-      en: 'I currently work at ISDEFE as a computer engineer, focused on cybersecurity, cyber intelligence and virtual infrastructure in contexts linked to the defense sector. My work combines system hardening, automation of technical environments, service deployment, secure network design and information analysis to strengthen defensive posture and support decision-making.'
+      es: 'Actualmente trabajo en ISDEFE como ingeniero de ciberseguridad en el sector defensa, centrado en DevSecOps, diseño de redes seguras e infraestructura. Securizar esa infraestructura implica identificar sus vulnerabilidades, valorar su riesgo y aplicar las medidas de corrección de forma automatizada y reproducible, una línea que estoy reforzando hacia la gestión de vulnerabilidades.',
+      en: 'I currently work at ISDEFE as a cybersecurity engineer in the defense sector, focused on DevSecOps, secure network design and infrastructure. Securing that infrastructure means identifying its vulnerabilities, assessing their risk and applying remediation in an automated, reproducible way, an area I am strengthening towards vulnerability management.'
     }
   },
   metrics: [
@@ -124,12 +124,30 @@ export const profile = {
       },
       location: 'Madrid',
       summary: {
-        es: 'Hardening de sistemas y servicios en entornos controlados • Automatización de tareas operativas e infraestructura • Diseño y segmentación de redes seguras • Despliegue y configuración de servicios en entornos virtualizados • Análisis de información orientado a ciberinteligencia • Soporte en operación técnica de entornos críticos',
-        en: 'Hardening of systems and services in controlled environments • Automation of operational and infrastructure tasks • Design and segmentation of secure networks • Deployment and configuration of services in virtualized environments • Information analysis focused on cyber intelligence • Support in the technical operation of critical environments'
+        es: 'Diseño, despliegue y automatización de infraestructura en entornos críticos (Ansible, Terraform, Docker) • Diseño y segmentación de redes seguras • Identificación y corrección de vulnerabilidades en la infraestructura desplegada: hardening, segmentación y configuración segura • Despliegue y configuración de servicios en entornos virtualizados • Soporte en operación técnica de entornos críticos',
+        en: 'Design, deployment and automation of infrastructure in critical environments (Ansible, Terraform, Docker) • Design and segmentation of secure networks • Identification and remediation of vulnerabilities in deployed infrastructure: hardening, segmentation and secure configuration • Deployment and configuration of services in virtualized environments • Support in the technical operation of critical environments'
       }
     }
   ] satisfies ExperienceItem[],
   education: [
+    {
+      institution: 'Qualys',
+      degree: {
+        es: 'Qualys Certified Specialist – Vulnerability Management Detection and Response (VMDR)',
+        en: 'Qualys Certified Specialist – Vulnerability Management Detection and Response (VMDR)'
+      },
+      period: 'Octubre 2026',
+      highlights: [
+        {
+          es: 'Inventario de activos, escaneo y detección de vulnerabilidades',
+          en: 'Asset inventory, scanning and vulnerability detection'
+        },
+        {
+          es: 'Priorización basada en riesgo (TruRisk), informes y dashboards',
+          en: 'Risk-based prioritization (TruRisk), reporting and dashboards'
+        }
+      ]
+    },
     {
       institution: 'International Business School (IMF) / Deloitte',
       degree: {
@@ -181,9 +199,10 @@ export const profile = {
       items: [
         'Hardening de sistemas',
         'Blue Team',
-        'Análisis de vulnerabilidades',
+        'Gestión y análisis de vulnerabilidades',
+        'CVE, CVSS, CWE y priorización basada en riesgo',
         'Operación en entornos SOC',
-        'Herramientas: Nessus, Wireshark'
+        'Herramientas: Qualys VMDR, Nessus, Wireshark'
       ]
     },
     {
@@ -200,7 +219,7 @@ export const profile = {
       items: [
         'Análisis de ciberinteligencia',
         'Explotación y correlación de información',
-        'Herramientas: MISP, PICO'
+        'Herramientas: Maltego, MISP (formación)'
       ]
     },
     {
