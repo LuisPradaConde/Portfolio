@@ -29,7 +29,7 @@ export async function generateMetadata({
     metadataBase: new URL(baseUrl),
     title: t('title'),
     description: t('description'),
-    applicationName: 'Premium CV Portfolio',
+    applicationName: 'Luis Prada Conde',
     keywords: [
       'Luis Prada Conde',
       'Cybersecurity engineer',
@@ -50,7 +50,7 @@ export async function generateMetadata({
       title: t('title'),
       description: t('description'),
       url: canonical,
-      siteName: 'Premium CV Portfolio',
+      siteName: 'Luis Prada Conde · Portfolio',
       locale,
       type: 'website',
       images: [
