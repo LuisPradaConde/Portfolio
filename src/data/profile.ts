@@ -374,7 +374,7 @@ export const profile = {
   contact: {
     email: 'luispradaconde@gmail.com',
     links: [
-      {label: 'LinkedIn', href: 'https://www.linkedin.com/in/luis-prada-conde-036a99230'},
+      {label: 'LinkedIn', href: 'https://www.linkedin.com/in/luis-prada-conde'},
       {label: 'Teléfono: +34 622 735 535'}
     ] satisfies ContactLink[]
   }
