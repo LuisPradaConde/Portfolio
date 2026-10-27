@@ -149,6 +149,30 @@ export const profile = {
       ]
     },
     {
+      institution: 'CCN-CERT · Centro Criptológico Nacional',
+      degree: {
+        es: 'Cursos de ciberseguridad del CCN (plataforma ÁNGELES)',
+        en: 'CCN cybersecurity courses (ÁNGELES platform)'
+      },
+      period: 'Septiembre 2023',
+      highlights: [
+        {es: 'Esquema Nacional de Seguridad (ENS)', en: 'National Security Framework (ENS)'},
+        {es: 'Análisis y gestión de riesgos de los sistemas de información', en: 'Information systems risk analysis and management'},
+        {es: 'Auditorías del ENS y gestión de cibercrisis', en: 'ENS audits and cyber crisis management'}
+      ]
+    },
+    {
+      institution: 'OpenWebinars',
+      degree: {
+        es: 'Cursos de Terraform y despliegues con Ansible',
+        en: 'Terraform and Ansible deployment courses'
+      },
+      period: 'Octubre 2023',
+      highlights: [
+        {es: 'Infraestructura como código y automatización de despliegues', en: 'Infrastructure as code and deployment automation'}
+      ]
+    },
+    {
       institution: 'International Business School (IMF) / Deloitte',
       degree: {
         es: 'Máster en Ciberseguridad',
