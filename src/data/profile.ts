@@ -49,8 +49,8 @@ export const profile = {
   },
   location: 'Madrid, Spain',
   availability: {
-    es: 'Ciberseguridad · DevSecOps · Gestión de vulnerabilidades · Infraestructura segura',
-    en: 'Cybersecurity · DevSecOps · Vulnerability management · Secure infrastructure'
+    es: 'DevSecOps · Gestión de vulnerabilidades · Infraestructura segura',
+    en: 'DevSecOps · Vulnerability management · Secure infrastructure'
   },
   hero: {
     eyebrow: {
